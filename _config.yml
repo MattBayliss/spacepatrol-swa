@@ -29,8 +29,13 @@ twitter_username: scribblor
 
 # Build settings
 theme: minima
+
 plugins:
   - jekyll-feed
+
+collections:
+  npcs:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -51,3 +56,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+minima:
+  skin: dark
