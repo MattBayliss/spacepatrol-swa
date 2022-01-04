@@ -6,4 +6,23 @@
  h1, h2, h3, h4, h5, h6, .site-title {
     font-family: $heading-font-family;
     color: $heading-color;
-  }
+    text-shadow: 0 0 0.3em rgba(lighten($heading-color, 50%), 0.7);
+
+    a {
+        color: $link-base-color;
+        text-shadow: 0 0 0.3em rgba(lighten($link-base-color, 50%), 0.7);
+        &:visited {
+            color: $link-visited-color;
+            text-shadow: 0 0 0.3em rgba(lighten($link-visited-color, 50%), 0.7);
+        }
+        
+        &:hover {
+            color: $link-hover-color;
+            text-shadow: 0 0 0.3em rgba(lighten($link-hover-color, 50%), 0.7);
+        }
+    }
+}
+
+.post-meta {
+    font-family: $post-meta-font-family;
+}
