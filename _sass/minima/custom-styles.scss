@@ -9,11 +9,11 @@
     text-shadow: 0 0 0.3em rgba(lighten($heading-color, 50%), 0.7);
 
     a {
-        color: $link-base-color;
-        text-shadow: 0 0 0.3em rgba(lighten($link-base-color, 50%), 0.7);
+        color: $heading-color;
+        text-shadow: 0 0 0.3em rgba(lighten($heading-color, 50%), 0.7);
         &:visited {
-            color: $link-visited-color;
-            text-shadow: 0 0 0.3em rgba(lighten($link-visited-color, 50%), 0.7);
+            color: desaturate( $heading-color, 30% );
+            text-shadow: 0 0 0.3em rgba(lighten(desaturate( $heading-color, 30% ), 50%), 0.7);
         }
         
         &:hover {
